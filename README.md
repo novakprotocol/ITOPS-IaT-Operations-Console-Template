@@ -2,19 +2,11 @@
 
 Version: v0.01
 
-This repository is the reusable operations console template.
+Role: reusable operations-console template
 
-## Boundaries
+This repository provides an approval/runtime console pattern with inventory, create, view, draft enable/disable, approval queue, running-now status, receipts, failures, scripts, releases, and SHA evidence.
 
-- Python-only implementation.
-- No PowerShell implementation.
-- Execution disabled by default.
-- Browser controls draft changes only.
-- Private credentials must never be stored in Git.
-- Enable/disable state requires review and commit.
+Execution is disabled by default. Browser controls draft changes only.
 
-## Support boundary
-
-If Python/runtime knowledge is missing, contact `StoragePythonTeam@` before editing implementation files.
-
-If Git, GitHub, GitHub Enterprise, or GitOps knowledge is missing, contact `StorageGitOPSTeam@` before editing repository-control or release content.
+Python support boundary: `StoragePythonTeam@`
+GitOps support boundary: `StorageGitOPSTeam@`

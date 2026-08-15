@@ -7,13 +7,11 @@
     "server_id": "example-runner-01"
   },
   "schedule": {
-    "type": "daily",
-    "time": "01:10",
-    "timezone": "America/New_York",
-    "missed_run_policy": "skip"
+    "type": "manual",
+    "timezone": "America/New_York"
   },
   "execution": {
-    "mode": "observe-only",
+    "mode": "disabled-placeholder",
     "entrypoint": "scripts/examples/noop_receipt.py",
     "working_directory": "/opt/example-orchestrator",
     "credential_reference": "none"

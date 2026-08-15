@@ -2,84 +2,18 @@
   "schema_version": "1.0",
   "title": "ITOPS-IaT Operations Console Template",
   "version": "v0.01",
-  "repo_role": "reusable operations console template",
-  "derived_for": "generic operations console",
   "private_mode": false,
   "execution_enabled": false,
-  "server_mutation": false,
-  "jobs_enabled": 0,
-  "servers": [
-    {
-      "schema_version": "1.0",
-      "server_id": "example-runner-01",
-      "display_name": "Example Runner 01",
-      "enabled": false,
-      "labels": {
-        "role": "orchestrator-runner",
-        "environment": "example"
-      },
-      "timezone": "America/New_York",
-      "max_concurrent_jobs": 1,
-      "execution": {
-        "mode": "disabled-placeholder",
-        "install_path": "/opt/example-orchestrator",
-        "state_path": "/var/lib/example-orchestrator",
-        "credential_reference": "local-placeholder"
-      }
-    }
-  ],
-  "jobs": [
-    {
-      "schema_version": "1.0",
-      "job_id": "example-daily-inventory",
-      "display_name": "Example Daily Inventory",
-      "enabled": false,
-      "target": {
-        "server_id": "example-runner-01"
-      },
-      "schedule": {
-        "type": "daily",
-        "time": "01:10",
-        "timezone": "America/New_York",
-        "missed_run_policy": "skip"
-      },
-      "execution": {
-        "mode": "observe-only",
-        "entrypoint": "scripts/examples/noop_receipt.py",
-        "working_directory": "/opt/example-orchestrator",
-        "credential_reference": "none"
-      },
-      "policy": {
-        "timeout_seconds": 1800,
-        "concurrency": "forbid",
-        "retry_count": 0
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "job_id": "example-pages-publication",
-      "display_name": "Example Pages Publication",
-      "enabled": false,
-      "target": {
-        "server_id": "example-runner-01"
-      },
-      "schedule": {
-        "type": "manual",
-        "timezone": "America/New_York"
-      },
-      "execution": {
-        "mode": "publish-only",
-        "entrypoint": "scripts/examples/noop_receipt.py",
-        "working_directory": "/opt/example-orchestrator",
-        "credential_reference": "none"
-      },
-      "policy": {
-        "timeout_seconds": 1800,
-        "concurrency": "forbid",
-        "retry_count": 0
-      }
-    }
-  ],
+  "generated_at_utc": "2026-08-15T18:25:08.112373+00:00",
+  "summary": {
+    "servers_registered": 1,
+    "jobs_defined": 2,
+    "jobs_enabled": 0,
+    "running_now": 0,
+    "pending_approvals": 1,
+    "failures": 0,
+    "receipts": 1
+  },
   "support": {
     "python": "StoragePythonTeam@",
     "gitops": "StorageGitOPSTeam@"

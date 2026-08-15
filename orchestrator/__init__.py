@@ -1,1 +1,1 @@
-"""Operations console support package v0.01."""
+"""Operations console support package."""

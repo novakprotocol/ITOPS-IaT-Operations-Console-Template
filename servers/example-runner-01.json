@@ -8,11 +8,5 @@
     "environment": "example"
   },
   "timezone": "America/New_York",
-  "max_concurrent_jobs": 1,
-  "execution": {
-    "mode": "disabled-placeholder",
-    "install_path": "/opt/example-orchestrator",
-    "state_path": "/var/lib/example-orchestrator",
-    "credential_reference": "local-placeholder"
-  }
+  "max_concurrent_jobs": 1
 }
