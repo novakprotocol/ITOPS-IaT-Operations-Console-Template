@@ -20,3 +20,10 @@ form { display:grid; gap:12px; } .form-grid { display:grid; grid-template-column
 </main></div><script>
 (function(){function byId(i){return document.getElementById(i)}function render(){var job={schema_version:'1.0',job_id:byId('jobId').value,enabled:byId('enabled').value==='true',target:{server_id:byId('server').value},schedule:{type:byId('schedule').value,timezone:'America/New_York'},execution:{entrypoint:byId('entrypoint').value,mode:'disabled-placeholder'},policy:{timeout_seconds:1800,concurrency:'forbid',retry_count:0}};byId('output').value=JSON.stringify(job,null,2)}byId('generate').addEventListener('click',render);byId('copy').addEventListener('click',function(){byId('output').select();document.execCommand('copy')});byId('theme').addEventListener('click',function(){document.documentElement.dataset.theme=document.documentElement.dataset.theme==='dark'?'light':'dark'});render();}());
 </script></body></html>
+
+<!-- CURRENT_TEMPLATE_BASELINE_HTML_START -->
+<section id="current-template-baseline" class="callout control" style="margin:18px 0;padding:16px;border-left:8px solid #1686cf;">
+  <strong>Current Controlled Document Pages Template V0.08.10 baseline</strong>
+  <p>Template repository: <code>novakprotocol/ITOPS-IaT-2210-Controlled-Document-Pages-Template</code> · Template version: <code>v0.08.10</code> · Current template SHA: <code>25a92a0dc1c3</code> · Python only · execution disabled.</p>
+</section>
+<!-- CURRENT_TEMPLATE_BASELINE_HTML_END -->
