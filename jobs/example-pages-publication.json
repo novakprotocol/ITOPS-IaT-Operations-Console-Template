@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "job_id": "example-pages-publication",
+  "display_name": "Example Pages Publication",
+  "enabled": false,
+  "target": {
+    "server_id": "example-runner-01"
+  },
+  "schedule": {
+    "type": "manual",
+    "timezone": "America/New_York"
+  },
+  "execution": {
+    "mode": "publish-only",
+    "entrypoint": "scripts/examples/noop_receipt.py",
+    "working_directory": "/opt/example-orchestrator",
+    "credential_reference": "none"
+  },
+  "policy": {
+    "timeout_seconds": 1800,
+    "concurrency": "forbid",
+    "retry_count": 0
+  }
+}

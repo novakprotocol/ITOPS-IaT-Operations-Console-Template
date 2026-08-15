@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "job_id": "example-daily-inventory",
+  "display_name": "Example Daily Inventory",
+  "enabled": false,
+  "target": {
+    "server_id": "example-runner-01"
+  },
+  "schedule": {
+    "type": "daily",
+    "time": "01:10",
+    "timezone": "America/New_York",
+    "missed_run_policy": "skip"
+  },
+  "execution": {
+    "mode": "observe-only",
+    "entrypoint": "scripts/examples/noop_receipt.py",
+    "working_directory": "/opt/example-orchestrator",
+    "credential_reference": "none"
+  },
+  "policy": {
+    "timeout_seconds": 1800,
+    "concurrency": "forbid",
+    "retry_count": 0
+  }
+}

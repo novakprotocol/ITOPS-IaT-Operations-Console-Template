@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "server_id": "example-runner-01",
+  "display_name": "Example Runner 01",
+  "enabled": false,
+  "labels": {
+    "role": "orchestrator-runner",
+    "environment": "example"
+  },
+  "timezone": "America/New_York",
+  "max_concurrent_jobs": 1,
+  "execution": {
+    "mode": "disabled-placeholder",
+    "install_path": "/opt/example-orchestrator",
+    "state_path": "/var/lib/example-orchestrator",
+    "credential_reference": "local-placeholder"
+  }
+}

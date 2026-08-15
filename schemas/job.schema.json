@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Operations Console Job",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "job_id",
+    "enabled",
+    "target",
+    "schedule",
+    "execution",
+    "policy"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "job_id": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "target": {
+      "type": "object"
+    },
+    "schedule": {
+      "type": "object"
+    },
+    "execution": {
+      "type": "object"
+    },
+    "policy": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

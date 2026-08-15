@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "generated_for": "generic operations console",
+  "execution_enabled": false,
+  "server_count": 1,
+  "job_count": 2,
+  "public_safe": true
+}
