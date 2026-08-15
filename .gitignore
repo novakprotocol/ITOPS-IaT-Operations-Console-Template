@@ -8,3 +8,10 @@ secrets/
 receipts/private/
 .env
 .env.*
+
+# Generated/local Python artifacts
+site/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
